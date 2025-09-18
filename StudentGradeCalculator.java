@@ -11,7 +11,11 @@ public class StudentGradeCalculator {
         System.out.println("Enter student marks: ");
         int studentMarks[] = new int[subCount];
         
-        for (int i=0; i<subCount; i++) { studentMarks[i] = scan.nextInt(); }
+        for (int i=0; i<subCount; i++) { 
+            int a = scan.nextInt();
+            if (a < 0 || a > 100) { System.out.println("Please enter valid mark."); i--; }
+            else { studentMarks[i] = a; }
+        }
 
         // Total calculation of marks
         int total = 0;
