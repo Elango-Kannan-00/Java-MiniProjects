@@ -24,6 +24,7 @@ public class StudentGradeCalculator {
         // Average calculation of marks.
         int average = total / subCount;
 
+        // Display Total and Average marks.
         System.out.println("Total: " + total + "/" + totalMarks);
         System.out.println("Average: " + average);
 
