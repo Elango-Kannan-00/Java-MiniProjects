@@ -9,7 +9,7 @@ public class StudentGradeCalculator {
         int totalMarks = subCount * 100;
 
         System.out.println("Enter student marks: ");
-        int studentMarks[] = new int[subCount];
+        int[] studentMarks = new int[subCount];
         
         for (int i=0; i<subCount; i++) { 
             int a = scan.nextInt();
@@ -28,7 +28,7 @@ public class StudentGradeCalculator {
         System.out.println("Total: " + total + "/" + totalMarks);
         System.out.println("Average: " + average);
 
-        // Grade calculation for each subjects.
+        // Grade calculation for each subject.
         System.out.println("==========Grade Calculation==========");
         for (int i=0; i<subCount; i++) {
             if (studentMarks[i] >= 90) { System.out.println("Grade for Subject " + i + " is: " + "A"); }
