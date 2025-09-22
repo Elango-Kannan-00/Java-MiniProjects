@@ -52,7 +52,6 @@ class ATMSimulation {
                 default -> System.out.println("No such operation.");
             }
         }
-
         scan.close();
     }
 }
